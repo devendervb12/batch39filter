@@ -1,0 +1,25 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="zcustomers.Customers" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" showHeader="false">
+		<!-- <subHeader>
+			<OverflowToolbar>
+				<SearchField liveChange="onSearch" width="100%" />
+			</OverflowToolbar>
+		</subHeader> -->
+		<content>
+			<List items="{/Customers}" id="idList">
+				<headerToolbar>
+					<Toolbar>
+						<content>
+							<SearchField liveChange="onSearch" width="100%" />
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<items>
+					<StandardListItem title="{CustomerID}"
+						description="{CompanyName}" />
+				</items>
+			</List>
+		</content>
+	</Page>
+</core:View>
